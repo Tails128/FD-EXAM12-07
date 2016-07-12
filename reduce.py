@@ -2,13 +2,18 @@ import fileinput
 
 indexMachine = 0
 indexTotal = 1
-data = {}
+currentindex = 1
+currentsum = 0
+
 
 for line in fileinput.input():
 	values = line.split('\t')
 	machineID = int(values[indexMachine])
-	total = int(values[indexTotal].replace("\n",""))
-	temp = {int(machineID) : total}
+	if(machineID != currentindex)
+		print( currentindex + "\t" + currentsum);
+		currentindex = machineID;
+		total = 0;
+	total += int(values[indexTotal].replace("\n",""))
 	if machineID in data.keys():
 		data[machineID] = data[machineID] + total
 	else:
