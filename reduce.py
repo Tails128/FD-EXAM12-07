@@ -3,7 +3,7 @@ import fileinput
 indexMachine = 0
 indexTotal = 1
 currentindex = 1
-currentsum = 0
+total = 0
 
 
 for line in fileinput.input():
