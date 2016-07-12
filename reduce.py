@@ -9,7 +9,7 @@ currentsum = 0
 for line in fileinput.input():
 	values = line.split('\t')
 	machineID = int(values[indexMachine])
-	if(machineID != currentindex)
+	if(machineID != currentindex):
 		print( currentindex + "\t" + currentsum);
 		currentindex = machineID;
 		total = 0;
