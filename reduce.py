@@ -14,9 +14,4 @@ for line in fileinput.input():
 		currentindex = machineID;
 		total = 0;
 	total += int(values[indexTotal].replace("\n",""))
-	if machineID in data.keys():
-		data[machineID] = data[machineID] + total
-	else:
-		data.update(temp)
-
-print(data)
+print( currentindex + "\t" + currentsum);
